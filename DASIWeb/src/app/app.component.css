@@ -1,0 +1,20 @@
+.carrousel-img-index {
+
+}
+
+.img-index-1 {
+    max-width: 100%;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    animation: img-index-1-animation 1s forwards 0s ease-in-out;
+}
+
+@keyframes img-index-1-animation{
+    0%{
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(xx);
+        opacity: 1;
+        }
+}
