@@ -1,20 +1,144 @@
-.carrousel-img-index {
+.input.pixel1, .input.pixel1:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel1;
+    font-size: 11px;
+}
+
+.label.pixel1 {
+    
+}
+
+.input.pixel2, .input.pixel2:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel2;
+    font-size: 24px;
+}
+
+.label.pixel2 {
+    font-family: pixel2;
+    font-size: 20px;
+}
+
+.input.pixel3, .input.pixel3:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel3;
+    font-size: 15px;
+}
+
+.label.pixel3 {
+    font-family: pixel3;
+    font-size: 10px;
+}
+
+.input.pixel4, .input.pixel4:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel4;
+    font-size: 26px;
+}
+
+.label.pixel4 {
+    font-family: pixel4;
+    font-size: 20px;
+}
+
+.input.pixel5, .input.pixel5:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel5;
+    font-size: 12px;
+}
+
+.label.pixel5 {
+    font-family: pixel5;
+    font-size: 10px;
+}
+
+.input.pixel6, .input.pixel6:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel6;
+    font-size: 20px;
+}
+
+.label.pixel6 {
+    font-family: pixel6;
+    font-size: 15px;
+}
+
+.input.pixel7, .input.pixel7:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel7;
+    font-size: 28px;
+}
+
+.label.pixel7 {
 
 }
 
-.img-index-1 {
-    max-width: 100%;
-    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
-    animation: img-index-1-animation 1s forwards 0s ease-in-out;
+.input.pixel8, .input.pixel8:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel8;
+    font-size: 17px;
 }
 
-@keyframes img-index-1-animation{
-    0%{
-        opacity: 0;
-        }
-    100%{
-        transform: rotate(xx);
-        opacity: 1;
-        }
+.label.pixel8 {
+    font-family: pixel8;
+    font-size: 10px;
+}
+
+.input.pixel9, .input.pixel9:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel9;
+    font-size: 22px;
+}
+
+.label.pixel9 {
+    font-family: pixel9;
+    font-size: 16px;
+}
+
+.input.pixel10, .input.pixel10:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel10;
+    font-size: 20px;
+}
+
+.label.pixel10 {
+    font-family: pixel10;
+    font-size: 16px;
+}
+
+.input.pixel11, .input.pixel11:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel11;
+    font-size: 20px;
+}
+
+.label.pixel11 {
+    font-family: pixel11;
+    font-size: 16px;
+}
+
+.input.pixel12, .input.pixel12:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel12;
+    font-size: 20px;
+}
+
+.label.pixel12 {
+    font-family: pixel12;
+    font-size: 14px;
+}
+
+.input.pixel13, .input.pixel13:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel13;
+    font-size: 34px;
+}
+
+.label.pixel13 {
+    font-family: pixel13;
+    font-size: 30px;
+}
+
+.input.pixel14, .input.pixel14:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel14;
+    font-size: 24px;
+    max-width: 180px;
+}
+
+.label.pixel14 {
+    font-family: pixel14;
+    font-size: 24px;
+}
+
+.label.pixel14:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel14;
+    font-size: 26px;
+    color: lightgray;
 }

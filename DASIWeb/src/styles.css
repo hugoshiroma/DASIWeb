@@ -1,1 +1,147 @@
-/* You can add global styles to this file, and also import other style files */
+/* DECLARAÇÕES A SEREM USADAS EM CLASSES(HTML):
+    - Input: class="input"
+*/
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.body {
+    height: 100%;
+    background-color: black;
+    animation: fadeInInicial 0.5s ease-in-out;
+}
+
+/* #region Importacao de fontes */
+@font-face {
+    font-family: pixel1;
+    src: url(./fonts/04B_30__.TTF);
+}
+
+@font-face {
+    font-family: pixel2;
+    src: url(./fonts/computer_pixel-7.ttf);
+}
+
+@font-face {
+    font-family: pixel3;
+    src: url(./fonts/Gamegirl.ttf);
+}
+
+@font-face {
+    font-family: pixel4;
+    src: url(./fonts/MerchantCopy.ttf);
+}
+
+@font-face {
+    font-family: pixel5;
+    src: url(./fonts/MerchantCopyDoublesize.ttf);
+}
+
+@font-face {
+    font-family: pixel6;
+    src: url(./fonts/MerchantCopyWide.ttf);
+}
+
+@font-face {
+    font-family: pixel7;
+    src: url(./fonts/PixelLCD-7.ttf);
+}
+
+@font-face {
+    font-family: pixel8;
+    src: url(./fonts/PressStart2P.ttf);
+}
+
+@font-face {
+    font-family: pixel9;
+    src: url(./fonts/slkscr.ttf);
+}
+
+@font-face {
+    font-family: pixel10;
+    src: url(./fonts/slkscrb.ttf);
+}
+
+@font-face {
+    font-family: pixel11;
+    src: url(./fonts/slkscre.ttf);
+}
+
+@font-face {
+    font-family: pixel12;
+    src: url(./fonts/slkscreb.ttf);
+}
+
+@font-face {
+    font-family: pixel13;
+    src: url(./fonts/thin_pixel-7.ttf);
+}
+
+@font-face {
+    font-family: pixel14;
+    src: url(./fonts/ARCADECLASSIC.TTF);
+}
+/* #endregion Importacao de fontes */
+
+/* #region Formatações padrão para aplicação */
+/* #region Input */
+
+.app-root .input:not(.browser-default) {
+    all: unset;
+    color: white;
+}
+
+.app-root .input:not(.browser-default):focus:not([type="readonly"]) {
+    all: unset;
+    color: white;
+}
+
+.app-root .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: white;
+}
+
+.app-root .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline {
+    color: white;
+}
+
+.app-root .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color: white;
+}
+
+.app-root .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick{
+    color: white;
+    opacity: 0.75;
+}
+
+.app-root .mat-form-field {
+    caret-color: white;
+}
+
+.app-root .mat-form-field-invalid {
+    caret-color: white;
+}
+
+.app-root .mat-form-field-label {
+    color: white;
+    font-family: pixel7;
+}
+
+.app-root .mat-form-field.mat-focused .mat-form-field-label {
+    color: white;
+}
+
+.app-root .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+    color: white;
+}
+/* #endregion Input */
+
+/* #endregion Formatações padrão para aplicação */
+
+@keyframes fadeInInicial {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
