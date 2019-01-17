@@ -4,76 +4,15 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-.body {
+html, body {
     height: 100%;
-    background-color: black;
-    animation: fadeInInicial 0.5s ease-in-out;
+    animation: backgroundFadeIn 1s forwards 0s linear;
 }
 
 /* #region Importacao de fontes */
 @font-face {
-    font-family: pixel1;
-    src: url(./fonts/04B_30__.TTF);
-}
-
-@font-face {
-    font-family: pixel2;
-    src: url(./fonts/computer_pixel-7.ttf);
-}
-
-@font-face {
-    font-family: pixel3;
-    src: url(./fonts/Gamegirl.ttf);
-}
-
-@font-face {
-    font-family: pixel4;
-    src: url(./fonts/MerchantCopy.ttf);
-}
-
-@font-face {
-    font-family: pixel5;
-    src: url(./fonts/MerchantCopyDoublesize.ttf);
-}
-
-@font-face {
-    font-family: pixel6;
-    src: url(./fonts/MerchantCopyWide.ttf);
-}
-
-@font-face {
-    font-family: pixel7;
-    src: url(./fonts/PixelLCD-7.ttf);
-}
-
-@font-face {
     font-family: pixel8;
     src: url(./fonts/PressStart2P.ttf);
-}
-
-@font-face {
-    font-family: pixel9;
-    src: url(./fonts/slkscr.ttf);
-}
-
-@font-face {
-    font-family: pixel10;
-    src: url(./fonts/slkscrb.ttf);
-}
-
-@font-face {
-    font-family: pixel11;
-    src: url(./fonts/slkscre.ttf);
-}
-
-@font-face {
-    font-family: pixel12;
-    src: url(./fonts/slkscreb.ttf);
-}
-
-@font-face {
-    font-family: pixel13;
-    src: url(./fonts/thin_pixel-7.ttf);
 }
 
 @font-face {
@@ -136,12 +75,14 @@
 
 /* #endregion Formatações padrão para aplicação */
 
-@keyframes fadeInInicial {
-    from {
+@keyframes backgroundFadeIn {
+    0% {
         opacity: 0;
-    }
-
-    to {
+        background: black;
+    }   
+    100% {
         opacity: 1;
+        transform: rotate(xx);
+        background: black;
     }
 }
