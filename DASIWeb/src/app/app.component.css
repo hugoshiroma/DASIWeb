@@ -79,6 +79,10 @@
     color: white;
 }
 
+.alt-font {
+    font-family: pixel8;
+}
+
 .diagonal {
     position: fixed;
     z-index: 8;
@@ -138,7 +142,8 @@
 
 .item {
     height: 6vh;
-    width: 60vh;
+    width: 113vh;
+    margin-top: 5px;
 }
 
 .opt {
@@ -155,6 +160,8 @@
     color: inherit;
     cursor: pointer;
 }
+
+
 
 .icon-list {
     background-image: url(../assets/outros/facebook.png);
