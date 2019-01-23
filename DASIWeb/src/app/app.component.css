@@ -121,6 +121,7 @@
     width: 127px;
     margin-right: -5vh;
     transform: scale(0.45,0.45);
+    cursor: pointer;
 }
 
 .instagram {
@@ -133,26 +134,26 @@
     height: 127px;
     width: 127px;
     transform: scale(0.45,0.45);
-}
-
-.instagram,.facebook:hover {
-    font-weight: bold;
     cursor: pointer;
 }
 
 .item {
     height: 6vh;
-    width: 113vh;
+    width: 180vh;
     margin-top: 5px;
+}
+
+.item.shared {
+    width: 180vh;
+}
+
+.item.shared.opt {
+    margin-right: 50px;
 }
 
 .opt {
     display: inline-flex;
     height: 6vh;
-}
-
-.opt:hover {
-    font-weight: bold;
 }
 
 .opt .text {
@@ -161,27 +162,31 @@
     cursor: pointer;
 }
 
+.opt .text:hover {
+    font-weight: bold;
+}
 
+.opt.second {
+    margin-left: 6vh;
+}
 
-.icon-list {
-    background-image: url(../assets/outros/facebook.png);
+.icon {
     position: relative;
     filter: invert(100%);
     bottom: 4vh;
     left: 0;
     z-index: 9;
-    height: 127px;
-    width: 127px;
     margin-right: -5vh;
-    margin-left: -7vh;
-    margin-top: -2vh;
+    margin-left: -51px;
+    margin-top: -42px;
     transform: scale(0.2,0.2);
     cursor: unset;
 }
 
-.text-facebook {
-    margin-left: -4px;
-    margin-top: -1px;
-    cursor: pointer;
-    height: 6vh;
+.icon.facebook {
+    background-image: url(../assets/outros/facebook.png);
+}
+
+.icon.instagram {
+    background-image: url(../assets/outros/instagram.png);
 }
