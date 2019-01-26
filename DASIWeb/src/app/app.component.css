@@ -23,6 +23,11 @@
     font-size: 24px;
 }
 
+.pixel8 {
+    font-family: pixel8;
+    font-size: 24px;
+}
+
 .label.pixel8:not(.browser-default):focus:not([type="readonly"]) {
     font-family: pixel8;
     font-size: 26px;
@@ -227,4 +232,56 @@
 
 .teste::after {
     right: -10px;
+}
+
+
+/* Construção da Home */
+
+body {
+    background-color:black;
+}
+
+.parallax {
+    background-position: center;
+    background-attachment: fixed;
+    position:relative;
+}
+
+.parallax1 {
+    background-image:url("../assets/parallax1.jpg");
+    background-position: top;
+}
+
+.parallax1-2 {
+    background-image:url("../assets/parallax1-2.jpg");
+}
+
+.info-section {
+    color:white;
+    padding:30px;
+    height:100vh;
+}
+
+.isb-container {
+    width:1000px;
+    margin:0 auto;
+    position:relative;
+}
+
+.info-section-body {
+    background-color:rgb(0, 0, 0, 0.6);
+    padding:15px;
+    top:50%;
+    width: 600px;
+    font-size:21px;
+}
+
+.isb-purple {
+    background-color:rgb(78, 12, 104, 0.6);
+}
+
+.isb-right {
+    position:absolute;
+    right:60px;
+    top:30px;
 }

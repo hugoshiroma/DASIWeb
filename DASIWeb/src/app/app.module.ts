@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 // Módulos externos
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material.module';
+//import { MaterialModule } from './material.module';
 
 // Módulos internos
 import { AppRoutingModule } from './app.routing';
@@ -14,7 +14,7 @@ import { AppRoutingModule } from './app.routing';
     AppComponent
   ],
   imports: [
-    BrowserModule, BrowserAnimationsModule, MaterialModule, AppRoutingModule
+    BrowserModule, BrowserAnimationsModule, /*MaterialModule,*/ AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
