@@ -12,19 +12,19 @@
 
 } */
 
-.input.pixel14, .input.pixel14:not(.browser-default):focus:not([type="readonly"]) {
-    font-family: pixel14;
+.input.pixel8, .input.pixel8:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel8;
     font-size: 24px;
     max-width: 180px;
 }
 
-.label.pixel14 {
-    font-family: pixel14;
+.label.pixel8 {
+    font-family: pixel8;
     font-size: 24px;
 }
 
-.label.pixel14:not(.browser-default):focus:not([type="readonly"]) {
-    font-family: pixel14;
+.label.pixel8:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel8;
     font-size: 26px;
     color: lightgray;
 }
@@ -61,8 +61,16 @@
     z-index: 9;
 }
 
+.icons .text {
+    font-family: pixel8;
+    font-size: 24px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 .upper {
-    font-family: pixel14;
+    font-family: pixel8;
     color: white;
     font-size: 75px;
     position: relative;
@@ -74,7 +82,7 @@
 }
 
 .middle {
-    font-family: pixel14;
+    font-family: pixel8;
     font-size: 30px;
     color: white;
 }
@@ -189,4 +197,34 @@
 
 .icon.instagram {
     background-image: url(../assets/outros/instagram.png);
+}
+
+.teste {
+  display: block;
+  color: black;
+  background: white;
+  width: 300px;
+  padding: 20px;
+  margin: 30px auto;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+  position: relative;  
+}
+
+.teste::before, .teste::after {
+    content: '';
+    top: 0;
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    background: black;
+}
+
+.teste::before {
+    left: -10px;
+
+}
+
+.teste::after {
+    right: -10px;
 }

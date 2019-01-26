@@ -14,11 +14,6 @@ html, body {
     font-family: pixel8;
     src: url(./fonts/PressStart2P.ttf);
 }
-
-@font-face {
-    font-family: pixel14;
-    src: url(./fonts/ARCADECLASSIC.TTF);
-}
 /* #endregion Importacao de fontes */
 
 /* #region Formatações padrão para aplicação */
