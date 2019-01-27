@@ -1,0 +1,287 @@
+/* .input.pixel8, .input.pixel8:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel8;
+    font-size: 17px;
+}
+
+.label.pixel8 {
+    font-family: pixel8;
+    font-size: 10px;
+}
+
+.label.pixel8:not(.browser-default):focus:not([type="readonly"]) {
+
+} */
+
+.input.pixel8, .input.pixel8:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel8;
+    font-size: 24px;
+    max-width: 180px;
+}
+
+.label.pixel8 {
+    font-family: pixel8;
+    font-size: 24px;
+}
+
+.pixel8 {
+    font-family: pixel8;
+    font-size: 24px;
+}
+
+.label.pixel8:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel8;
+    font-size: 26px;
+    color: lightgray;
+}
+
+.left-side {
+    position: absolute;
+    height: 100%;
+    width: 75%;
+    left: 0;
+}
+
+.right-side {
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    right: 0;
+}
+
+.text-box {
+    position: relative;
+    z-index: 9;
+}
+
+.text {
+    height: 6vh;
+}
+
+.icons {
+    position: fixed;
+    height: 10vh;
+    bottom: 0vh;
+    left: -4vh;
+    display: inline-flex;
+    z-index: 9;
+}
+
+.icons .text {
+    font-family: pixel8;
+    font-size: 24px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.upper {
+    font-family: pixel8;
+    color: white;
+    font-size: 75px;
+    position: relative;
+    margin-left: 7vh;
+}
+
+.upper.sub {
+    font-size: 40px;
+}
+
+.middle {
+    font-family: pixel8;
+    font-size: 30px;
+    color: white;
+}
+
+.alt-font {
+    font-family: pixel8;
+}
+
+.diagonal {
+    position: fixed;
+    z-index: 8;
+}
+
+.diagonal.left {
+    height: 160vh;
+    width: 75%;
+    top: -42vh;
+    left: -23vh;
+    transform: rotate(20deg);
+    background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1)), black;
+}
+
+.photo {
+    background-image: url(../assets/outros/18222677_1301167113252036_2909394390891401211_n.jpg);
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 45%);
+    mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 45%);
+    transform: scale(1.39, 1.39);
+    top: 10vh;
+    right: -20vh;
+    position: fixed;
+    height: 100vh;
+    width: 100vh;
+    z-index: 7;
+}
+
+.facebook {
+    background-image: url(../assets/outros/facebook.png);
+    position: relative;
+    filter: invert(100%);
+    bottom: 4vh;
+    left: 0;
+    z-index: 9;
+    height: 127px;
+    width: 127px;
+    margin-right: -5vh;
+    transform: scale(0.45,0.45);
+    cursor: pointer;
+}
+
+.instagram {
+    background-image: url(../assets/outros/instagram.png);
+    position: relative;
+    filter: invert(100%);
+    bottom: 4vh;
+    left: 0;
+    z-index: 9;
+    height: 127px;
+    width: 127px;
+    transform: scale(0.45,0.45);
+    cursor: pointer;
+}
+
+.item {
+    height: 6vh;
+    width: 180vh;
+    margin-top: 5px;
+}
+
+.item.shared {
+    width: 180vh;
+}
+
+.item.shared.opt {
+    margin-right: 50px;
+}
+
+.opt {
+    display: inline-flex;
+    height: 6vh;
+}
+
+.opt .text {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.opt .text:hover {
+    font-weight: bold;
+}
+
+.opt.second {
+    margin-left: 6vh;
+}
+
+.icon {
+    position: relative;
+    filter: invert(100%);
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    margin-right: -5vh;
+    margin-left: -51px;
+    margin-top: -42px;
+    transform: scale(0.2,0.2);
+    cursor: unset;
+}
+
+.icon.facebook {
+    background-image: url(../assets/outros/facebook.png);
+}
+
+.icon.instagram {
+    background-image: url(../assets/outros/instagram.png);
+}
+
+.teste {
+  display: block;
+  color: black;
+  background: white;
+  width: 300px;
+  padding: 20px;
+  margin: 30px auto;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+  position: relative;  
+}
+
+.teste::before, .teste::after {
+    content: '';
+    top: 0;
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    background: black;
+}
+
+.teste::before {
+    left: -10px;
+
+}
+
+.teste::after {
+    right: -10px;
+}
+
+
+/* Construção da Home */
+
+body {
+    background-color:black;
+}
+
+.parallax {
+    background-position: center;
+    background-attachment: fixed;
+    position:relative;
+}
+
+.parallax1 {
+    background-image:url("../assets/parallax1.jpg");
+    background-position: top;
+}
+
+.parallax1-2 {
+    background-image:url("../assets/parallax1-2.jpg");
+}
+
+.info-section {
+    color:white;
+    padding:30px;
+    height:100vh;
+}
+
+.isb-container {
+    width:1000px;
+    margin:0 auto;
+    position:relative;
+}
+
+.info-section-body {
+    background-color:rgb(0, 0, 0, 0.6);
+    padding:15px;
+    top:50%;
+    width: 600px;
+    font-size:21px;
+}
+
+.isb-purple {
+    background-color:rgb(78, 12, 104, 0.6);
+}
+
+.isb-right {
+    position:absolute;
+    right:60px;
+    top:30px;
+}
