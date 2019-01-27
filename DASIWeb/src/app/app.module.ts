@@ -4,20 +4,20 @@ import { NgModule } from '@angular/core';
 
 // Módulos externos
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material.module';
+import { CarouselModule } from './../components/carousel/carousel.module';
 
 // Módulos internos
 import { AppRoutingModule } from './app.routing';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, CarouselModule
   ],
   imports: [
-    BrowserModule, BrowserAnimationsModule, MaterialModule, AppRoutingModule
+    BrowserModule, BrowserAnimationsModule, AppRoutingModule, CarouselModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 
 export class AppModule { }
