@@ -12,233 +12,15 @@
 
 } */
 
-.input.pixel8, .input.pixel8:not(.browser-default):focus:not([type="readonly"]) {
-    font-family: pixel8;
-    font-size: 24px;
-    max-width: 180px;
-}
-
-.label.pixel8 {
-    font-family: pixel8;
-    font-size: 24px;
-}
-
-.pixel8 {
-    font-family: pixel8;
-    font-size: 24px;
-}
-
-.label.pixel8:not(.browser-default):focus:not([type="readonly"]) {
-    font-family: pixel8;
-    font-size: 26px;
-    color: lightgray;
-}
-
-.left-side {
-    position: absolute;
-    height: 100%;
-    width: 75%;
-    left: 0;
-}
-
-.right-side {
-    position: absolute;
-    height: 100%;
-    width: 25%;
-    right: 0;
-}
-
-.text-box {
-    position: relative;
-    z-index: 9;
-}
-
-.text {
-    height: 6vh;
-}
-
-.icons {
-    position: fixed;
-    height: 10vh;
-    bottom: 0vh;
-    left: -4vh;
-    display: inline-flex;
-    z-index: 9;
-}
-
-.icons .text {
-    font-family: pixel8;
-    font-size: 24px;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-}
-
-.upper {
-    font-family: pixel8;
-    color: white;
-    font-size: 75px;
-    position: relative;
-    margin-left: 7vh;
-}
-
-.upper.sub {
-    font-size: 40px;
-}
-
-.middle {
-    font-family: pixel8;
-    font-size: 30px;
-    color: white;
-}
-
-.alt-font {
-    font-family: pixel8;
-}
-
-.diagonal {
-    position: fixed;
-    z-index: 8;
-}
-
-.diagonal.left {
-    height: 160vh;
-    width: 75%;
-    top: -42vh;
-    left: -23vh;
-    transform: rotate(20deg);
-    background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1)), black;
-}
-
-.photo {
-    background-image: url(../assets/outros/18222677_1301167113252036_2909394390891401211_n.jpg);
-    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 45%);
-    mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 45%);
-    transform: scale(1.39, 1.39);
-    top: 10vh;
-    right: -20vh;
-    position: fixed;
-    height: 100vh;
-    width: 100vh;
-    z-index: 7;
-}
-
-.facebook {
-    background-image: url(../assets/outros/facebook.png);
-    position: relative;
-    filter: invert(100%);
-    bottom: 4vh;
-    left: 0;
-    z-index: 9;
-    height: 127px;
-    width: 127px;
-    margin-right: -5vh;
-    transform: scale(0.45,0.45);
-    cursor: pointer;
-}
-
-.instagram {
-    background-image: url(../assets/outros/instagram.png);
-    position: relative;
-    filter: invert(100%);
-    bottom: 4vh;
-    left: 0;
-    z-index: 9;
-    height: 127px;
-    width: 127px;
-    transform: scale(0.45,0.45);
-    cursor: pointer;
-}
-
-.item {
-    height: 6vh;
-    width: 180vh;
-    margin-top: 5px;
-}
-
-.item.shared {
-    width: 180vh;
-}
-
-.item.shared.opt {
-    margin-right: 50px;
-}
-
-.opt {
-    display: inline-flex;
-    height: 6vh;
-}
-
-.opt .text {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-}
-
-.opt .text:hover {
-    font-weight: bold;
-}
-
-.opt.second {
-    margin-left: 6vh;
-}
-
-.icon {
-    position: relative;
-    filter: invert(100%);
-    bottom: 0;
-    left: 0;
-    z-index: 9;
-    margin-right: -5vh;
-    margin-left: -51px;
-    margin-top: -42px;
-    transform: scale(0.2,0.2);
-    cursor: unset;
-}
-
-.icon.facebook {
-    background-image: url(../assets/outros/facebook.png);
-}
-
-.icon.instagram {
-    background-image: url(../assets/outros/instagram.png);
-}
-
-.teste {
-  display: block;
-  color: black;
-  background: white;
-  width: 300px;
-  padding: 20px;
-  margin: 30px auto;
-  border-top: 10px solid black;
-  border-bottom: 10px solid black;
-  position: relative;  
-}
-
-.teste::before, .teste::after {
-    content: '';
-    top: 0;
-    width: 10px;
-    height: 100%;
-    position: absolute;
-    background: black;
-}
-
-.teste::before {
-    left: -10px;
-
-}
-
-.teste::after {
-    right: -10px;
-}
-
-
 /* Construção da Home */
 
 body {
     background-color:black;
+}
+
+.title {
+    font-family: pixel8;
+    font-size: 8vh;
 }
 
 .parallax {
@@ -263,7 +45,7 @@ body {
 }
 
 .isb-container {
-    width:1000px;
+    width:90%;
     margin:0 auto;
     position:relative;
 }
@@ -271,17 +53,147 @@ body {
 .info-section-body {
     background-color:rgb(0, 0, 0, 0.6);
     padding:15px;
-    top:50%;
-    width: 600px;
-    font-size:21px;
+    font-size:4vh;
+    width:95%;
+    margin-left: -5vh;
 }
 
 .isb-purple {
-    background-color:rgb(78, 12, 104, 0.6);
+    background-color:rgb(78, 12, 104, 1);
+    box-shadow:
+    /* Inner Background Color */
+      0   -6px 0  -2px rgb(78, 12, 104, 1),
+      0    6px 0  -2px rgb(78, 12, 104, 1),
+      0  -12px 0  -4px rgb(78, 12, 104, 1),
+      0   12px 0  -4px rgb(78, 12, 104, 1),
+      0  -18px 0  -8px rgb(78, 12, 104, 1),
+      0   18px 0  -8px rgb(78, 12, 104, 1),
+      0  -24px 0 -12px rgb(78, 12, 104, 1),
+      0   24px 0 -12px rgb(78, 12, 104, 1),
+    /* Inner Border */
+     -2px  0   0   0   black,
+      2px  0   0   0   black,
+      0   -4px 0   0   black,
+      0    4px 0   0   black,
+      0  -10px 0  -2px black,
+      0   10px 0  -2px black,
+      0  -14px 0  -4px black,
+      0   14px 0  -4px black,
+      0  -20px 0  -8px black,
+      0   20px 0  -8px black,
+      0  -26px 0 -12px black,
+      0   26px 0 -12px black,
+    /* Middle Border */
+     -4px  0   0   0   white,
+      4px  0   0   0   white,
+      0   -2px 0   2px white,
+      0    2px 0   2px white,
+      0   -8px 0   0px white,
+      0    8px 0   0px white,
+      0  -12px 0  -2px white,
+      0   12px 0  -2px white,
+      0  -16px 0  -4px white,
+      0   16px 0  -4px white,
+      0  -22px 0  -8px white,
+      0   22px 0  -8px white,
+      0  -28px 0 -12px white,
+      0   28px 0 -12px white,
+    /* Outer Border */
+     -6px  0   0   0   black,
+      6px  0   0   0   black,
+      0    0   0   4px black,
+      0   -6px 0   2px black,
+      0    6px 0   2px black,
+      0  -10px 0   0   black,
+      0   10px 0   0   black,
+      0  -14px 0  -2px black,
+      0   14px 0  -2px black,
+      0  -18px 0  -4px black,
+      0   18px 0  -4px black,
+      0  -24px 0  -8px black,
+      0   24px 0  -8px black,
+      0  -30px 0 -12px black,
+      0   30px 0 -12px black;
+}
+
+.isb-white {
+    box-shadow:
+        /* Inner Border */
+        -4px  0   0   0  rgb(0, 0, 0, .7),
+        4px  0   0   0   rgb(0, 0, 0, .7),
+        0   -8px 0   0   rgb(0, 0, 0, .7),
+        0    8px 0   0   rgb(0, 0, 0, .7),
+        0  -20px 0  -4px rgb(0, 0, 0, .7),
+        0   20px 0  -4px rgb(0, 0, 0, .7),
+        0  -28px 0  -8px rgb(0, 0, 0, .7),
+        0   28px 0  -8px rgb(0, 0, 0, .7),
+        0  -40px 0  -16px rgb(0, 0, 0 , .7),
+        0   40px 0  -16px rgb(0, 0, 0, .7),
+        0  -52px 0 -24px rgb(0, 0, 0, .7),
+        0   52px 0 -24px rgb(0, 0, 0, .7),
+        /* Middle Border */
+        -8px  0   0   0  rgb(255, 255, 255, .7),
+        8px  0   0   0   rgb(255, 255, 255, .7),
+        0   -8px 0   4px rgb(255, 255, 255, .7),
+        0    4px 0   4px rgb(255, 255, 255, .7),
+        0   -16px 0   0px rgb(255, 255, 255, .7),
+        0    16px 0   0px rgb(255, 255, 255, .7),
+        0  -24px 0  -4px rgb(255, 255, 255, .7),
+        0   24px 0  -4px rgb(255, 255, 255, .7),
+        0  -32px 0  -8px rgb(255, 255, 255, .7),
+        0   32px 0  -8px rgb(255, 255, 255, .7),
+        0  -44px 0  -16px rgb(255, 255, 255, .7),
+        0   44px 0  -16px rgb(255, 255, 255, .7),
+        0  -56px 0 -24px rgb(255, 255, 255, .7),
+        0   56px 0 -24px rgb(255, 255, 255, .7),
+        /* Outer Border */
+        -12px  0   0   0  rgb(0, 0, 0, .7),
+        12px  0   0   0   rgb(0, 0, 0, .7),
+        0    0   0   8px rgb(0, 0, 0, .7),
+        0   -12px 0   4px rgb(0, 0, 0, .7),
+        0    12px 0   4px rgb(0, 0, 0, .7),
+        0  -20px 0   0   rgb(0, 0, 0, .7),
+        0   20px 0   0   rgb(0, 0, 0, .7),
+        0  -28px 0  -4px rgb(0, 0, 0, .7),
+        0   28px 0  -4px rgb(0, 0, 0, .7),
+        0  -36px 0  -8px rgb(0, 0, 0, .7),
+        0   36px 0  -8px rgb(0, 0, 0, .7),
+        0  -48px 0  -16px rgb(0, 0, 0, .7),
+        0   48px 0  -16px rgb(0, 0, 0, .7),
+        0  -60px 0 -24px rgb(0, 0, 0, .7),
+        0   60px 0 -24px rgb(0, 0, 0, .7);
 }
 
 .isb-right {
     position:absolute;
-    right:60px;
-    top:30px;
+    right: 0;
+    top:10vh;
+}
+
+.isb-left {
+    position:absolute;
+    left: 0;
+    top:15vh;
+}
+
+.logo {
+	filter: invert(100%);
+	position: absolute;
+	transform: scale(0.4);
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 751px) {
+    .title {
+        font-size: 4vh;
+    }
+    
+    .info-section {
+        width: 100vh;
+    }
+
+    .info-section-body {
+        font-size: 15px;
+    }
 }

@@ -3,9 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 // Módulos externos
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdlModule } from '@angular-mdl/core';
 
 // Módulos internos
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderModule } from './../components/header/header.module';
+import { MainCarouselModule } from './../components/main-carousel/main-carousel.module';
 import { AppRoutingModule } from './app.routing';
 
 @NgModule({
@@ -13,7 +16,7 @@ import { AppRoutingModule } from './app.routing';
     AppComponent
   ],
   imports: [
-    BrowserModule, BrowserAnimationsModule, AppRoutingModule
+    BrowserModule, BrowserAnimationsModule, AppRoutingModule, HeaderModule, MdlModule, MainCarouselModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]
