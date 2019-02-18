@@ -13,6 +13,14 @@
     width: 100%;
 }
 
+.d-block.w-100.one {
+    margin-top: 8vh;
+}
+
+.d-block.w-100.two {
+    margin-top: -30vh;
+}
+
 @media screen and (max-width: 751px) {
     .carousel {
         height: 150vh;
