@@ -6,10 +6,10 @@ import { NgModule } from '@angular/core';
 import { MdlModule } from '@angular-mdl/core';
 
 // Módulos internos
+import { AppRoutingModule } from './app.routing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderModule } from './../components/header/header.module';
 import { MainCarouselModule } from './../components/main-carousel/main-carousel.module';
-import { AppRoutingModule } from './app.routing';
 
 @NgModule({
   declarations: [

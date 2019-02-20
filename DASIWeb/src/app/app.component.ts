@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { timer } from 'rxjs';
+import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,22 +8,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  ngOnInit() {
-    if ( navigator.userAgent.match(/Android/i)
-      || navigator.userAgent.match(/webOS/i)
-      || navigator.userAgent.match(/iPhone/i)
-      || navigator.userAgent.match(/iPad/i)
-      || navigator.userAgent.match(/iPod/i)
-      || navigator.userAgent.match(/BlackBerry/i)
-      || navigator.userAgent.match(/Windows Phone/i)
-    ) {
-      console.log('É CELULAR CARAIO');
-    } else {
-      console.log('num é celular...');
-      const div = window.document.createElement('div');
-      div.style.height = '800px';
-      div.style.width = '800px';
-      div.style.backgroundColor = 'red';
-    }
+  tempScrollTop: number;
+
+  changeHeader: boolean = false;
+  fixSubheader: boolean = false;
+
+  delay = timer(5000);
+
+  @HostListener('window:scroll', ['$event']) onScroll(event: any) {
+      if (event.srcElement.scrollingElement.scrollTop > 612) {
+          this.changeHeader = true;
+      } else {
+          this.changeHeader = false;
+      }
+
+      if (event.srcElement.scrollingElement.scrollTop > 595.6) {
+          this.fixSubheader = true;
+      } else {
+          this.fixSubheader = false;
+      }
+
+      var progressPorc = (event.srcElement.scrollingElement.scrollTop * 100) / (event.srcElement.scrollingElement.scrollHeight - event.srcElement.scrollingElement.offsetHeight);
+      document.getElementById('progress').style.width = progressPorc + '%';
+
   }
+
+  constructor() { }
+
+  ngOnInit() {}
 }

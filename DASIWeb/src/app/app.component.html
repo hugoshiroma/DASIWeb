@@ -1,11 +1,14 @@
 <app-header></app-header>
 <app-main-carousel></app-main-carousel>
-<div class="sections">
+<div class="subnavbar subnavbar-black" [ngClass]="{'sticky': fixSubheader}">
+    <div class="progress" id="progress"></div>
+</div>
+<div class="sections" [ngClass]="{'adjust-sections': fixSubheader}">
     <section>
         <section class="info-section">
             <div class="isb-container">
-                <div class="card-container">
-                    <div class="info-section-body isb-black isb-left">
+                <div class="card-container isb-left intro">
+                    <div class="info-section-body isb-black">
                         <h3 class="title">O que é o DASI?</h3>
                         <div>
                             O DASI (Diretório Acadêmico de Sistemas de Informação) é
@@ -20,7 +23,7 @@
         </section>
         <section class="info-section">
             <div class="isb-container">
-                <div class="card-container">
+                <div class="card-container isb-right academico">
                     <div class="info-section-body isb-black isb-right">
                         <h3 class="title">Atividades Acadêmicas</h3>
                         <div>
@@ -34,9 +37,9 @@
                 </div>
             </div>
         </section>
-        <section class="info-section parallax parallax1-2">
+        <section class="info-section">
             <div class="isb-container">
-                <div class="card-container">
+                <div class="card-container isb-left eventos">
                     <div class="info-section-body isb-black isb-right">
                         <h3 class="title">Eventos</h3>
                         <div>
@@ -48,9 +51,9 @@
                 </div>
             </div>
         </section>
-        <section class="info-section parallax parallax1">
+        <section class="info-section">
             <div class="isb-container">
-                <div class="card-container">
+                <div class="card-container isb-right esportivo">
                     <div class="info-section-body isb-black">
                         <h3 class="title">Esportivo</h3>
                         <div>
