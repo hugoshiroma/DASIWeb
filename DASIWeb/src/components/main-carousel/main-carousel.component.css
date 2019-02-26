@@ -15,6 +15,7 @@
 
 .d-block.w-100.one {
     margin-top: 8vh;
+    transform: scale(1.04, 1.04);
 }
 
 .d-block.w-100.two {

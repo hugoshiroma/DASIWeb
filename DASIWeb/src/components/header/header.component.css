@@ -22,7 +22,7 @@ nav {
 }
 
 .navbar {
-	height: 15.5vh;
+	height: 100px;
 	transition: all 0.2s ease-in-out;
 }
 
