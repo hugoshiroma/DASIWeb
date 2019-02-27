@@ -16,13 +16,13 @@ export class AppComponent implements OnInit {
   delay = timer(5000);
 
   @HostListener('window:scroll', ['$event']) onScroll(event: any) {
-      if (event.srcElement.scrollingElement.scrollTop > document.body.offsetHeight - 115) {
+      if (event.srcElement.scrollingElement.scrollTop > document.body.offsetHeight - 100) {
           this.changeHeader = true;
       } else {
           this.changeHeader = false;
       }
 
-      if (event.srcElement.scrollingElement.scrollTop > document.body.offsetHeight - 115) {
+      if (event.srcElement.scrollingElement.scrollTop > document.body.offsetHeight - 100) {
           this.fixSubheader = true;
       } else {
           this.fixSubheader = false;
