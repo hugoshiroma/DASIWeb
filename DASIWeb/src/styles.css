@@ -78,6 +78,6 @@ html, body {
     100% {
         opacity: 1;
         transform: rotate(xx);
-        background: black;
+        background: white;
     }
 }
