@@ -1,5 +1,5 @@
 .carousel {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .d-block.w-100.one {
-    margin-top: 13vh;
+    margin-top: 7vh;
     transform: scale(1.04, 1.04);
 }
 
