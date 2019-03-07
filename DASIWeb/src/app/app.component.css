@@ -136,7 +136,6 @@ body {
 }
 
 .logo {
-	filter: invert(100%);
 	position: absolute;
 	transform: scale(0.4);
 }
@@ -165,17 +164,14 @@ body {
     margin-top: 2.2px;
     width: 0%;
     height: 11px;
-    background: rgb(108, 0, 180);
+    background: #70277c;
     box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.25);
     
 }
 
 .expand-more {
-    font-size: 8.5vh;
     margin-left: auto;
     margin-right: auto;
-    width: 6%;
-    height: 100%;
 }
 
 .down {
@@ -186,7 +182,7 @@ body {
     text-align: center;
     background: rgb(173, 173, 173);
     filter: brightness(115%);
-    height: 12vh;
+    height: 8vh;
     width: 100%;
 }
 
