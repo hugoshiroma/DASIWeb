@@ -13,7 +13,8 @@ nav {
 	-moz-transition: padding-top .3s, padding-bottom .3s;
 	transition: padding-top .3s, padding-bottom .3s;
 	border: none;
-	background-color:rgb(96, 39, 116);
+	background-color:rgb(96, 39, 116, 0);
+	filter: opacity(85%);
 }
 
 .body {
@@ -23,11 +24,12 @@ nav {
 
 .navbar {
 	height: 100px;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;	
 }
 
 .navbar-black {
 	background: lightgray;
+	filter: opacity(100%);
 }
 
 .navbar-brand {
@@ -36,6 +38,10 @@ nav {
 	font-family: pixel8;
 	font-weight:700;
 	letter-spacing:0.1em;
+}
+
+.navbar-initial {
+	box-shadow: unset;
 }
 
 .navbar-brand  span {
@@ -56,14 +62,18 @@ nav {
 	font-size: 100%;
     font-weight: 500;
     letter-spacing: 1px;
-    color: white;
+    color: black;
 	font-family: pixel8;
 	transition: all 0.2s ease-in-out;
+	border: black solid 1px;
+    background: lightgray;
+    margin-left: 1px;
+    border-radius: 2px;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-	background: rgba(255,255,255,.15);
-	color:black;
+	background: rgb(78, 12, 104, 1);
+	color:white;
 }
 
 .navbar-nav .nav-item .nav-link-black {
