@@ -16,16 +16,10 @@ export class HeaderComponent implements OnInit {
     offsetTop: number;
 
     @HostListener('window:scroll', ['$event']) onScroll(event: any) {
-        if (event.srcElement.scrollingElement.scrollTop > document.body.offsetHeight - document.body.offsetHeight * 0.23) {
+        if (event.srcElement.scrollingElement.scrollTop > document.body.offsetHeight - document.body.offsetHeight * 0.08 - 80) {
             this.changeHeader = true;
         } else {
             this.changeHeader = false;
-        }
-
-        if (event.srcElement.scrollingElement.scrollTop > document.body.offsetHeight - document.body.offsetHeight * 0.23) {
-            this.fixSubheader = true;
-        } else {
-            this.fixSubheader = false;
         }
     }
 

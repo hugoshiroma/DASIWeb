@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   delay = timer(5000);
 
   @HostListener('window:scroll', ['$event']) onScroll(event: any) {
-      if (event.srcElement.scrollingElement.scrollTop > document.body.offsetHeight - document.body.offsetHeight * 0.1 - 100) {
+      if (event.srcElement.scrollingElement.scrollTop > document.body.offsetHeight - document.body.offsetHeight * 0.08 - 80) {
           this.fixSubheader = true;
       } else {
           this.fixSubheader = false;
