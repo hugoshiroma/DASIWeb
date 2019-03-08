@@ -8,10 +8,7 @@ import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  tempScrollTop: number;
-
-  changeHeader: boolean = false;
-  fixSubheader: boolean = false;
+  fixSubheader = false;
 
   delay = timer(5000);
 

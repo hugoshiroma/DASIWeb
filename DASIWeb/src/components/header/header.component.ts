@@ -10,8 +10,7 @@ export class HeaderComponent implements OnInit {
 
     delay = timer(25);
 
-    changeHeader: boolean = false;
-    fixSubheader: boolean = false;
+    changeHeader = false;
 
     offsetTop: number;
 
