@@ -1,30 +1,69 @@
-import { timer } from 'rxjs';
-import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
 
-  fixSubheader = false;
+export class AppComponent {
 
-  delay = timer(5000);
+    fixSubheader = false;
+    progressPorc: number;
 
-  @HostListener('window:scroll', ['$event']) onScroll(event: any) {
-      if (event.srcElement.scrollingElement.scrollTop > document.body.offsetHeight - document.body.offsetHeight * 0.08 - 80) {
-          this.fixSubheader = true;
-      } else {
-          this.fixSubheader = false;
-      }
+    // view-change variables
+    carousel = true;
+    sections = true;
 
-      var progressPorc = (event.srcElement.scrollingElement.scrollTop * 100) / (event.srcElement.scrollingElement.scrollHeight - event.srcElement.scrollingElement.offsetHeight);
-      document.getElementById('progress').style.width = progressPorc + '%';
+    @HostListener('window:scroll', ['$event']) onScroll(event: any) {
+        if (event.srcElement.scrollingElement.scrollTop > document.body.offsetHeight - document.body.offsetHeight * 0.08 - 72) {
+            this.fixSubheader = true;
+        } else {
+            this.fixSubheader = false;
+        }
 
-  }
+        this.progressPorc = (event.srcElement.scrollingElement.scrollTop * 100) /
+        (event.srcElement.scrollingElement.scrollHeight - event.srcElement.scrollingElement.offsetHeight);
 
-  constructor() { }
+        document.getElementById('progress').style.width = this.progressPorc + '%';
+    }
 
-  ngOnInit() {}
+    constructor() { }
+
+    componentControl(event: CmdComponent) {
+        switch (event.obj) {
+            case 'vdom':
+                this.vdomCmdControl(event.value);
+                break;
+        }
+    }
+
+    vdomCmdControl(value: string) {
+        switch (value) {
+            case 'shop':
+
+            // changeCarousel
+            this.carousel = !this.carousel;
+
+            // remove info-sections
+            this.sections = !this.sections;
+
+            this.resetDefaultProperties();
+
+            break;
+        }
+    }
+
+    // reset default properties
+    resetDefaultProperties() {
+        this.progressPorc = 0;
+        document.getElementById('progress').style.width = '0';
+        this.fixSubheader = false;
+    }
+}
+
+class CmdComponent {
+    obj: string;
+    value: string;
+    class: string;
 }

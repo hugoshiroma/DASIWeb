@@ -1,32 +1,30 @@
-import { Component, OnInit, HostListener } from '@angular/core';
-import { timer } from 'rxjs';
+import { Component, HostListener, Output, EventEmitter, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
-    delay = timer(25);
-
+    changeHeaderView = false;
     changeHeader = false;
 
-    offsetTop: number;
+    @Output() componentControl: EventEmitter<{obj: string, value: string}> = new EventEmitter<{obj: string, value: string}>();
 
+    // horizontal progress bar
     @HostListener('window:scroll', ['$event']) onScroll(event: any) {
         if (event.srcElement.scrollingElement.scrollTop > document.body.offsetHeight - document.body.offsetHeight * 0.08 - 80) {
-            this.changeHeader = true;
+            this.changeHeaderView = true;
         } else {
-            this.changeHeader = false;
+            this.changeHeaderView = false;
         }
     }
 
     constructor() { }
 
-    ngOnInit() {
-        this.delay.subscribe(x => {
-            this.offsetTop = document.getElementById('banner').offsetTop;
-        });
+    click(event: MouseEvent) {
+        this.componentControl.emit({obj: 'vdom', value: 'shop'});
+        this.changeHeader = !this.changeHeader;
     }
 }

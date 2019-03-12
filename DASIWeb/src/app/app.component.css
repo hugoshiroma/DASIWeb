@@ -14,18 +14,17 @@
 
 /* Construção da Home */
 
-body {
-    background-color:black;
+.body {
+    background: rgb(173, 173, 173);
+    filter: brightness(115%);
 }
 
 .sections {
     position: relative;
-    background: rgb(173, 173, 173);
-    filter: brightness(115%);
     padding-top: 20vh;
 }
 
-.adjust-sections {
+.adjust-body {
     padding-top: 22.1vh;
 }
 
