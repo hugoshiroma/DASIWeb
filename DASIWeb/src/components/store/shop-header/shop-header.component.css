@@ -13,8 +13,8 @@ nav {
 	-moz-transition: padding-top .3s, padding-bottom .3s;
 	transition: padding-top .3s, padding-bottom .3s;
 	border: none;
-	background-color: rgb(189, 188, 194, 0);
-	filter: opacity(80%);
+	background-color:rgb(96, 39, 116, 0);
+	filter: opacity(85%);
 }
 
 .body {
@@ -24,13 +24,12 @@ nav {
 
 .navbar {
 	height: 60px;
-	transition: all 0.2s ease-in-out;
-	filter: brightness(115%);
+	transition: all 0.2s ease-in-out;	
 }
 
 .navbar-black {
-	background: rgb(189, 188, 194);
-	filter: opacity(100%) brightness(115%);
+	background: lightgray;
+	filter: opacity(100%);
 }
 
 .buttons {
@@ -86,7 +85,7 @@ nav {
 	font-family: pixel8;
 	transition: all 0.2s ease-in-out;
 	border: black solid 2px;
-    background: rgb(189, 188, 194);
+    background: lightgray;
     margin-left: 1px;
 	border-radius: 2px;
 }
@@ -139,9 +138,9 @@ nav {
 	width: 125px;
 	opacity: 0;
 	transition: all 0.2s ease-in-out;
-	border: 2px solid black;
+	border: 3px solid black;
 	border-radius: 100%;
-	filter: brightness(80%);
+	filter: brightness(83%);
 	box-shadow: 0 5px 0px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
 

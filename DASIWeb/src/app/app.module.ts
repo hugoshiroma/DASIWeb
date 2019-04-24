@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app.routing';
 import { HeaderModule } from './../components/header/header.module';
 import { MainCarouselModule } from './../components/main-carousel/main-carousel.module';
 import { ShopCarouselModule } from './../components/store/shop-carousel/shop-carousel.module';
+import { ShopHeaderModule } from './../components/store/shop-header/shop-header.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { ShopCarouselModule } from './../components/store/shop-carousel/shop-car
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule, AppRoutingModule, HeaderModule, MdlModule, MainCarouselModule,
-    ShopCarouselModule
+    ShopCarouselModule, ShopHeaderModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]

@@ -1,24 +1,24 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner" [ngClass]="{'navbar-black': changeHeaderView, 'navbar-initial': !changeHeaderView}">
   <div class="container icon">
-    <img class="pixeled-logo" src="../../assets/outros/grifo-logo.png" [ngClass]="{'pixeled-logo-invert': changeHeaderView}" />
+    <img class="pixeled-logo" src="../../../assets/outros/grifo-logo.png" [ngClass]="{'pixeled-logo-invert': changeHeaderView}" />
   </div>
-	<div #buttons class="container buttons">
+  <div #buttons class="container buttons">
 
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" *ngIf="!changeHeader" [ngClass]="{'hide-header': changeHeader}">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link"  [ngClass]="{'nav-link-black': changeHeaderView}">ACADÊMICO</a>
+          <a class="nav-link"  [ngClass]="{'nav-link-black': changeHeaderView}">MEUS DADOS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  [ngClass]="{'nav-link-black': changeHeaderView}">ESPORTIVO</a>
+          <a class="nav-link"  [ngClass]="{'nav-link-black': changeHeaderView}">PEDIDOS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  [ngClass]="{'nav-link-black': changeHeaderView}">EVENTOS</a>
+          <a class="nav-link"  [ngClass]="{'nav-link-black': changeHeaderView}">SAC</a>
         </li>
         <li class="nav-item" (click)="click()">
-          <a class="nav-link"  [ngClass]="{'nav-link-black': changeHeaderView}">LOJA</a>
-        </li> 
+          <a class="nav-link"  [ngClass]="{'nav-link-black': changeHeaderView}">SITE</a>
+        </li>
       </ul>
     </div>
   </div>

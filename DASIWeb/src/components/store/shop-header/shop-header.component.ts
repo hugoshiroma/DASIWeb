@@ -1,12 +1,12 @@
-import { Component, HostListener, Output, EventEmitter } from '@angular/core';
+import { Component, EventEmitter, Output, HostListener } from '@angular/core';
 
 @Component({
-    selector: 'app-main-header',
-    templateUrl: './header.component.html',
-    styleUrls: ['./header.component.css']
+    selector: 'app-shop-header',
+    templateUrl: './shop-header.component.html',
+    styleUrls: ['./shop-header.component.css']
 })
 
-export class HeaderComponent {
+export class ShopHeaderComponent {
 
     changeHeaderView = false;
     changeHeader = false;
@@ -25,7 +25,7 @@ export class HeaderComponent {
     constructor() { }
 
     click() {
-        this.componentControl.emit({obj: 'vdom', value: 'shop'});
+        this.componentControl.emit({obj: 'vdom', value: 'home'});
         this.changeHeader = !this.changeHeader;
     }
 }

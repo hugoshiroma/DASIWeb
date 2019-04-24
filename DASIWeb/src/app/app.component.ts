@@ -1,9 +1,10 @@
 import { Component, HostListener } from '@angular/core';
+import { $ } from 'protractor';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
 
 export class AppComponent {
@@ -15,6 +16,8 @@ export class AppComponent {
     carousel = true;
     sections = true;
 
+    x = [];
+
     @HostListener('window:scroll', ['$event']) onScroll(event: any) {
         if (event.srcElement.scrollingElement.scrollTop > document.body.offsetHeight - document.body.offsetHeight * 0.08 - 72) {
             this.fixSubheader = true;
@@ -23,17 +26,18 @@ export class AppComponent {
         }
 
         this.progressPorc = (event.srcElement.scrollingElement.scrollTop * 100) /
-        (event.srcElement.scrollingElement.scrollHeight - event.srcElement.scrollingElement.offsetHeight);
+            (event.srcElement.scrollingElement.scrollHeight - event.srcElement.scrollingElement.offsetHeight);
 
         document.getElementById('progress').style.width = this.progressPorc + '%';
     }
 
-    constructor() { }
+    constructor() {
+    }
 
-    componentControl(event: CmdComponent) {
-        switch (event.obj) {
+    componentControl(input) {
+        switch (input.obj) {
             case 'vdom':
-                this.vdomCmdControl(event.value);
+                this.vdomCmdControl(input.value);
                 break;
         }
     }
@@ -41,16 +45,26 @@ export class AppComponent {
     vdomCmdControl(value: string) {
         switch (value) {
             case 'shop':
+                // changeCarousel
+                this.carousel = false;
 
-            // changeCarousel
-            this.carousel = !this.carousel;
+                // remove info-sections
+                this.sections = false;
 
-            // remove info-sections
-            this.sections = !this.sections;
+                this.resetDefaultProperties();
 
-            this.resetDefaultProperties();
+                break;
 
-            break;
+            case 'home':
+                // changeCarousel
+                this.carousel = true;
+
+                // remove shop
+                this.sections = true;
+
+                this.resetDefaultProperties();
+
+                break;
         }
     }
 

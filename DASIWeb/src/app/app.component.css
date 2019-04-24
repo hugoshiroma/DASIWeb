@@ -15,7 +15,7 @@
 /* Construção da Home */
 
 .body {
-    background: rgb(173, 173, 173);
+    background: rgb(189, 188, 194);
     filter: brightness(115%);
 }
 
@@ -36,6 +36,7 @@
 .parallax {
     background-position: center;
     background-attachment: fixed;
+    background-size: cover;
     position:relative;
 }
 
@@ -44,8 +45,13 @@
     background-position: top;
 }
 
-.parallax1-2 {
-    background-image:url("../assets/parallax1-2.jpg");
+.parallax2 {
+    background-image:url("../assets/eventos/d4fcf734-0b1a-4e7b-a1a5-cda03bf3ec7b.jpg");
+}
+
+.parallax3 {
+    background-image:url("../assets/esportivo/photo5138834263091816443.jpg");
+    background-position: bottom;
 }
 
 .info-section {
@@ -127,6 +133,7 @@
 .isb-right {
     position:absolute;
     right: 0;
+    top: 20vh;
 }
 
 .isb-left {
@@ -179,7 +186,7 @@
 
 .firstpage-end {
     text-align: center;
-    background: rgb(173, 173, 173);
+    background: rgb(189, 188, 194);
     filter: brightness(115%);
     height: 8vh;
     width: 100%;
