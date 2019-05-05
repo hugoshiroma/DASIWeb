@@ -1,0 +1,193 @@
+/* .input.pixel8, .input.pixel8:not(.browser-default):focus:not([type="readonly"]) {
+    font-family: pixel8;
+    font-size: 17px;
+}
+
+.label.pixel8 {
+    font-family: pixel8;
+    font-size: 10px;
+}
+
+.label.pixel8:not(.browser-default):focus:not([type="readonly"]) {
+
+} */
+
+/* Construção da Home */
+
+.body {
+    background: rgb(189, 188, 194);
+    filter: brightness(115%);
+}
+
+.sections {
+    position: relative;
+    padding-top: 20vh;
+}
+
+.adjust-body {
+    padding-top: 22.1vh;
+}
+
+.title {
+    font-family: pixel8;
+    font-size: 8vh;
+}
+
+.parallax {
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position:relative;
+}
+
+.parallax1 {
+    background-image:url("../../assets/esportivo/35283654_181783539151190_6209389246671749120_o.jpg");
+    background-position: top;
+}
+
+.parallax2 {
+    background-image:url("../../assets/eventos/d4fcf734-0b1a-4e7b-a1a5-cda03bf3ec7b.jpg");
+}
+
+.parallax3 {
+    background-image:url("../../assets/esportivo/photo5138834263091816443.jpg");
+    background-position: bottom;
+}
+
+.info-section {
+    color:white;
+    padding:30px;
+    height:100vh;
+}
+
+.isb-container {
+    width:90%;
+    margin:0 auto;
+    position:relative;
+}
+
+.card-container {
+    transition: all 0.5s ease-in-out;
+    width: 70%;
+}
+
+.card-container:hover {
+    margin-top: -20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.info-section-body {
+    background-color:rgb(0, 0, 0, 1);
+    font-size:4vh;
+    padding-left: 2vh;
+}
+
+.isb-black {
+    box-shadow:
+        /* Inner Border */
+        -4px  0   0   0  black,
+        4px  0   0   0   black,
+        0   -8px 0   0   black,
+        0    8px 0   0   black,
+        0  -20px 0  -4px black,
+        0   20px 0  -4px black,
+        0  -28px 0  -8px black,
+        0   28px 0  -8px black,
+        0  -40px 0  -16px black,
+        0   40px 0  -16px black,
+        0  -52px 0 -24px black,
+        0   52px 0 -24px black,
+        /* Middle Border */
+        -8px  0   0   0  white,
+        8px  0   0   0   white,
+        0   -8px 0   4px white,
+        0    4px 0   4px white,
+        0   -16px 0   0px white,
+        0    16px 0   0px white,
+        0  -24px 0  -4px white,
+        0   24px 0  -4px white,
+        0  -32px 0  -8px white,
+        0   32px 0  -8px white,
+        0  -44px 0  -16px white,
+        0   44px 0  -16px white,
+        0  -56px 0 -24px white,
+        0   56px 0 -24px white,
+        /* Outer Border */
+        -12px  0   0   0  black,
+        12px  0   0   0   black,
+        0    -2px   0   8px black,
+        0   -12px 0   4px black,
+        0    12px 0   4px black,
+        0  -20px 0   0   black,
+        0   20px 0   0   black,
+        0  -28px 0  -4px black,
+        0   28px 0  -4px black,
+        0  -36px 0  -8px black,
+        0   36px 0  -8px black,
+        0  -48px 0  -16px black,
+        0   48px 0  -16px black,
+        0  -60px 0 -24px black,
+        0   60px 0 -24px black;
+}
+
+.isb-right {
+    position:absolute;
+    right: 0;
+    top: 20vh;
+}
+
+.isb-left {
+    position:absolute;
+    left: -8vh;
+}
+
+.logo {
+	position: absolute;
+	transform: scale(0.4);
+}
+
+.subnavbar {
+	position: relative;
+	width: 100%;
+	height: 12.7px;
+    background: white;
+	z-index: 1;
+}
+
+.sticky {
+	position: fixed;
+    top: 60px;
+    height: 14px;
+}
+
+.subnavbar-black {
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.progress {
+    margin-top: 2.2px;
+    width: 0%;
+    height: 11px;
+    background: rgb(78, 12, 104);
+    box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.25);
+    
+}
+
+.expand-more {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.down {
+    background-image: url('../../assets/outros/3633e3b69c.png');
+}
+
+.firstpage-end {
+    text-align: center;
+    background: rgb(189, 188, 194);
+    filter: brightness(115%);
+    height: 8vh;
+    width: 100%;
+}

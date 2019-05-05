@@ -5,20 +5,25 @@ import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-// Módulos externos
+// external modules
 import { AppRoutingModule } from './app.routing';
-import { HeaderModule } from './../components/header/header.module';
-import { MainCarouselModule } from './../components/main-carousel/main-carousel.module';
-import { ShopCarouselModule } from './../components/store/shop-carousel/shop-carousel.module';
-import { ShopHeaderModule } from './../components/store/shop-header/shop-header.module';
+
+// home
+import { HomeComponent } from './../components/home/home.component';
+import { HeaderComponent } from './../components/home/header/header.component';
+import { CarouselComponent } from './../components/home/carousel/carousel.component';
+
+// shop
+import { ShopComponent } from './../components/shop/shop.component';
+import { ShopHeaderComponent } from './../components/shop/shop-header/shop-header.component';
+import { ShopCarouselComponent } from './../components/shop/shop-carousel/shop-carousel.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, HomeComponent, HeaderComponent, CarouselComponent, ShopComponent, ShopHeaderComponent, ShopCarouselComponent
   ],
   imports: [
-    BrowserModule, BrowserAnimationsModule, AppRoutingModule, HeaderModule, MdlModule, MainCarouselModule,
-    ShopCarouselModule, ShopHeaderModule
+    BrowserModule, BrowserAnimationsModule, AppRoutingModule, MdlModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]

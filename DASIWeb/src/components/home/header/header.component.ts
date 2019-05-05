@@ -1,7 +1,7 @@
 import { Component, HostListener, Output, EventEmitter } from '@angular/core';
 
 @Component({
-    selector: 'app-main-header',
+    selector: 'app-header',
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.css']
 })

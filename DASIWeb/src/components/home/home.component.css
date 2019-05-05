@@ -41,16 +41,16 @@
 }
 
 .parallax1 {
-    background-image:url("../assets/esportivo/35283654_181783539151190_6209389246671749120_o.jpg");
+    background-image:url("../../assets/esportivo/35283654_181783539151190_6209389246671749120_o.jpg");
     background-position: top;
 }
 
 .parallax2 {
-    background-image:url("../assets/eventos/d4fcf734-0b1a-4e7b-a1a5-cda03bf3ec7b.jpg");
+    background-image:url("../../assets/eventos/d4fcf734-0b1a-4e7b-a1a5-cda03bf3ec7b.jpg");
 }
 
 .parallax3 {
-    background-image:url("../assets/esportivo/photo5138834263091816443.jpg");
+    background-image:url("../../assets/esportivo/photo5138834263091816443.jpg");
     background-position: bottom;
 }
 
@@ -181,7 +181,7 @@
 }
 
 .down {
-    background-image: url('../assets/outros/3633e3b69c.png');
+    background-image: url('../../assets/outros/3633e3b69c.png');
 }
 
 .firstpage-end {
@@ -190,20 +190,4 @@
     filter: brightness(115%);
     height: 8vh;
     width: 100%;
-}
-
-/* Responsividade */
-
-@media screen and (max-width: 500px) {
-    .title {
-        font-size: 4vh;
-    }
-    
-    .info-section {
-        width: 100vh;
-    }
-
-    .info-section-body {
-        font-size: 15px;
-    }
 }

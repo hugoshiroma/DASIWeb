@@ -1,0 +1,76 @@
+<div class="headers">
+    <app-header (componentControl)="vdomRouteEmit($event)"></app-header>
+</div>
+<div class="carousels">
+    <app-carousel></app-carousel>
+</div>
+<div class="subnavbar subnavbar-black" [ngClass]="{'sticky': fixSubheader}">
+    <div class="progress" id="progress"></div>
+</div>
+<div class="firstpage-end">
+    <div class="expand-more down"></div>
+</div>
+<div class="body">
+    <div class="sections" [ngClass]="{'adjust-body': fixSubheader}">
+        <section>
+            <section class="info-section">
+                <div class="isb-container">
+                    <div class="card-container isb-left intro">
+                        <div class="info-section-body isb-black">
+                            <h3 class="title">O que é o DASI?</h3>
+                            <div>
+                                O DASI (Diretório Acadêmico de Sistemas de Informação) é
+                                entidade de representação do curso formada por alunos de Sistemas de
+                                Informação que representam os interesses dos estudantes junto à faculdade
+                                como confraternizações, atividades com práticas esportivas além de elaborar
+                                e implementar projetos acadêmicos.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="info-section">
+                <div class="isb-container">
+                    <div class="card-container isb-right academico">
+                        <div class="info-section-body isb-black isb-right">
+                            <h3 class="title">Atividades Acadêmicas</h3>
+                            <div>
+                                O DASI (Diretório Acadêmico de Sistemas de Informação) é entidade de
+                                representação do curso formada por alunos de Sistemas de Informação
+                                que representam os interesses dos estudantes junto à faculdade como
+                                confraternizações, atividades com práticas esportivas além de elaborar
+                                e implementar projetos acadêmicos.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="info-section parallax">
+                <div class="isb-container">
+                    <div class="card-container isb-left eventos">
+                        <div class="info-section-body isb-black isb-right">
+                            <h3 class="title">Eventos</h3>
+                            <div>
+                                O pilar da quebração não falta pra essa galera do barulho (literalmente).<br />
+                                Nunca mais ninguém dorme, a galera alucinada sem saber o que tá acontecendo gritando e pulando como se 
+                                tivesse chegado a invasão dos Zerg.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="info-section parallax parallax3">
+                <div class="isb-container">
+                    <div class="card-container isb-right esportivo">
+                        <div class="info-section-body isb-black">
+                            <h3 class="title">Esportivo</h3>
+                            <div>
+                                Nós fazemos vários jogos bonitos e o pessoal gama na torcida pa o bagulho fica frenesi total mesmo.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+</div>
