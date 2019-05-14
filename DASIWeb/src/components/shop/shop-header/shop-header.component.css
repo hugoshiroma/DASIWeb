@@ -103,7 +103,29 @@ nav {
 	background: unset;
 }
 
+
 .navbar-nav .nav-item:hover .nav-link {
+	color: white;
+}
+
+.navbar-nav .nav-item .alt-nav-link {
+	color: black;
+	margin-top: -30px;
+	height: 100%;
+	background: unset;
+}
+
+.navbar-nav .nav-item:hover .alt-nav-link {
+	color: white;
+}
+
+.navbar-nav .nav-item .sub-nav-link {
+	color: black;
+	height: 100%;
+	background: unset;
+}
+
+.navbar-nav .nav-item:hover .sub-nav-link {
 	color: white;
 }
 

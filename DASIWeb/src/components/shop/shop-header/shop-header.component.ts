@@ -9,7 +9,6 @@ import { Component, EventEmitter, Output, HostListener } from '@angular/core';
 export class ShopHeaderComponent {
 
     changeHeaderView = false;
-    changeHeader = false;
 
     @Output() componentControl: EventEmitter<{obj: string, value: string}> = new EventEmitter<{obj: string, value: string}>();
 
@@ -24,8 +23,11 @@ export class ShopHeaderComponent {
 
     constructor() { }
 
-    click() {
+    emitHome() {
         this.componentControl.emit({obj: 'vdom', value: 'home'});
-        this.changeHeader = !this.changeHeader;
+    }
+
+    emitRegisterModal() {
+        this.componentControl.emit({obj: 'modal', value: 'register'});
     }
 }

@@ -5,18 +5,13 @@
   <div #buttons class="container buttons">
 
     <!-- Navbar links -->
-    <div class="collapse navbar-collapse" *ngIf="!changeHeader" [ngClass]="{'hide-header': changeHeader}">
+    <div class="collapse navbar-collapse" [ngClass]="{'hide-header': changeHeader}">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link"  [ngClass]="{'nav-link-black': changeHeaderView}">MEUS DADOS</a>
+        <li class="nav-item" (click)="emitRegisterModal()">
+          <a class="alt-nav-link"  [ngClass]="{'nav-link-black': changeHeaderView}">REGISTRO/</a>
+          <a class="sub-nav-link"  [ngClass]="{'nav-link-black': changeHeaderView}">LOGIN</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link"  [ngClass]="{'nav-link-black': changeHeaderView}">PEDIDOS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"  [ngClass]="{'nav-link-black': changeHeaderView}">SAC</a>
-        </li>
-        <li class="nav-item" (click)="click()" [routerLink]="['/home']">
+        <li class="nav-item" (click)="emitHome()" [routerLink]="['/home']">
           <a class="nav-link" [ngClass]="{'nav-link-black': changeHeaderView}">SITE</a>
         </li>
       </ul>

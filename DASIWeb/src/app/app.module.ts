@@ -17,10 +17,12 @@ import { CarouselComponent } from './../components/home/carousel/carousel.compon
 import { ShopComponent } from './../components/shop/shop.component';
 import { ShopHeaderComponent } from './../components/shop/shop-header/shop-header.component';
 import { ShopCarouselComponent } from './../components/shop/shop-carousel/shop-carousel.component';
+import { RegisterModalComponent } from './../components/modals/register-modal/register-modal.component';
 
 @NgModule({
   declarations: [
-    AppComponent, HomeComponent, HeaderComponent, CarouselComponent, ShopComponent, ShopHeaderComponent, ShopCarouselComponent
+    AppComponent, HomeComponent, HeaderComponent, CarouselComponent, ShopComponent, ShopHeaderComponent, ShopCarouselComponent,
+    RegisterModalComponent
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule, AppRoutingModule, MdlModule

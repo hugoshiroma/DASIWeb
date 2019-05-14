@@ -191,3 +191,7 @@
     height: 8vh;
     width: 100%;
 }
+
+.showed {
+    animation: fadein 1.5seg forwards linear;
+}

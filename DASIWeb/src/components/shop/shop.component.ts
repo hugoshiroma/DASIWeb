@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, HostListener, EventEmitter } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
     selector: 'shop',
@@ -10,7 +10,7 @@ export class ShopComponent {
     fixSubheader = false;
     progressPorc: number;
 
-    @Output() componentControl: EventEmitter<{obj: string, value: string}> = new EventEmitter<{obj: string, value: string}>();
+    register = false;
 
     @HostListener('window:scroll', ['$event']) onScroll(event: any) {
         if (event.srcElement.scrollingElement.scrollTop > document.body.offsetHeight - document.body.offsetHeight * 0.08 - 72) {
@@ -32,6 +32,12 @@ export class ShopComponent {
         switch (input.obj) {
             case 'vdom':
             this.resetDefaultProperties();
+            break;
+
+            case 'modal':
+            if (input.value === 'register') {
+                this.register = true;
+            }
             break;
         }
     }
